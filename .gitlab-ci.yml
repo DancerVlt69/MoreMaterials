@@ -1,0 +1,8 @@
+image: gradle:jdk16
+
+build:
+  script: "gradle jar --info"
+  artifacts:
+    name: "MoreMaterials"
+    paths: 
+    - "build/reobfJar/*.jar"

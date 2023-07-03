@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "iii",
+    "iAi",
+    "iii"
+  ],
+  "key": {
+    "i": {
+      "item": "morematerials:platin"
+    },
+    "A": {
+      "item": "minecraft:cooked_beef"
+    }
+  },
+  "result": {
+    "item": "morematerials:platin_steak",
+    "count": 1
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " i ",
+    " / ",
+    " / "
+  ],
+  "key": {
+    "i": {
+      "item": "morematerials:platin"
+    },
+    "/": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "morematerials:platin_shovel",
+    "count": 1
+  }
+}
