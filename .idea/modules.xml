@@ -4,10 +4,9 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/Desktop.morematerials.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Desktop.morematerials.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/Desktop.morematerials.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Desktop.morematerials.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/MoreMaterials.iml" filepath="$PROJECT_DIR$/.idea/modules/MoreMaterials.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/de.bensonheimer.morematerials.main.iml" filepath="$PROJECT_DIR$/.idea/modules/de.bensonheimer.morematerials.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/de.bensonheimer.morematerials.test.iml" filepath="$PROJECT_DIR$/.idea/modules/de.bensonheimer.morematerials.test.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/morematerials.main.iml" filepath="$PROJECT_DIR$/.idea/modules/morematerials.main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/morematerials.test.iml" filepath="$PROJECT_DIR$/.idea/modules/morematerials.test.iml" />
     </modules>
   </component>
 </project>

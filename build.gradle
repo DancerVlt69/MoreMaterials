@@ -1,9 +1,12 @@
+buildscript {
+
+}
 
 plugins {
-    id 'eclipse'
     id 'net.minecraftforge.gradle' version '5.1.+'
     id 'org.parchmentmc.librarian.forgegradle' version '1.+'
     id 'org.spongepowered.mixin' version '0.7.+'
+    id 'eclipse'
 }
 
 
@@ -11,7 +14,7 @@ group = 'de.bensonheimer'
 version = '1.0.0'
 
 java {
-    archivesBaseName = 'morematerials'
+    archivesBaseName = 'MoreMaterials'
     toolchain.languageVersion = JavaLanguageVersion.of(17)
 }
 
@@ -29,7 +32,15 @@ minecraft {
     //
     // Use non-default mappings at your own risk. They may not always work.
     // Simply re-run your setup task after changing the mappings to update your workspace.
-    mappings channel: 'official', version: '1.20.1'
+    // mappings channel: 'official', version: '1.20.1'
+
+    // mappings channel: 'parchment', version: '2023.07.02-1.20.1'
+
+    if (parchmentVersion == mcVersion) {
+        mappings channel: 'parchment', version: "${parchmentDate}-${mcVersion}"
+    } else {
+        mappings channel: 'parchment', version: "${parchmentVersion}-${parchmentDate}-${mcVersion}"
+    }
 
     // accessTransformer = file('src/main/resources/META-INF/accesstransformer.cfg')
 
@@ -152,13 +163,13 @@ dependencies {
 jar {
     manifest {
         attributes([
-                "Specification-Title": "morematerials",
-                            //"Specification-Vendor": "morematerials authors",
-                            "Specification-Version": "1", // We are version 1 of ourselves
+                "Specification-Title": "More Materials",
+                "Specification-Vendor": "Bensonheimer",
+                "Specification-Version": "1", // We are version 1 of ourselves
                 "Implementation-Title": project.name,
                 "Implementation-Version": project.jar.archiveVersion,
-                            //"Implementation-Vendor": "morematerials authors",
-                            "Implementation-Timestamp": new Date().format("yyyy-MM-dd'T'HH:mm:ssZ")
+                "Implementation-Vendor": "Bensonheimer",
+                "Implementation-Timestamp": new Date().format("yyyy-MM-dd'T'HH:mm:ssZ")
         ])
     }
 }

@@ -20,7 +20,10 @@ import java.util.function.Supplier;
 
 @Mod.EventBusSubscriber(modid = Morematerials.MODID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class ModTab {
-    public static final DeferredRegister<CreativeModeTab> TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, Morematerials.MODID);
+
+
+    public static final DeferredRegister<CreativeModeTab> TABS =
+			DeferredRegister.create(Registries.CREATIVE_MODE_TAB, Morematerials.MODID);
 
     public static final List<Supplier<? extends ItemLike>> MOREMATERIALS_TAB_ITEMS = new ArrayList<>();
 
