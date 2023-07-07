@@ -1,20 +1,17 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    " II",
-    " / ",
-    " / "
+    "III",
+	  "III",
+	  "III"
   ],
   "key": {
     "I": {
       "item": "morematerials:platin_ingot"
-    },
-    "/": {
-      "item": "minecraft:stick"
     }
   },
   "result": {
-    "item": "morematerials:platin_hoe",
-    "count": 1
+    "item": "morematerials:platin_block",
+    "count": 9
   }
 }

@@ -1,20 +1,26 @@
 {
-  "item.morematerials.platin": "Platin Ingot",
-  "item.morematerials.raw_platin": "Raw Platin",
-  "block.morematerials.deepslate_platin_ore": " Deepslate Platin Ore",
-  "itemGroup.morematerials": "More Materials",
-  "block.morematerials.platin_block": "Block of Platin",
-  "item.morematerials.platin_sword": "Platin Sword",
-  "item.morematerials.platin_pickaxe": "Platin Pickaxe",
-  "item.morematerials.platin_shovel": "Platin Shovel",
-  "item.morematerials.platin_axe": "Platin Axe",
-  "item.morematerials.platin_hoe": "Platin Hoe",
-  "item.morematerials.platin_apple": "Platin Apple",
-  "block.morematerials.platin_ore": "Platin Ore",
-  "item.morematerials.platin_nugget": "Platin Nugget",
-  "item.morematerials.platin_steak": "Platin Steak",
-  "item.morematerials.platin_helmet": "Platin Helmet",
-  "item.morematerials.platin_chestplate": "Platin Chestplate",
-  "item.morematerials.platin_leggings": "Platin Leggings",
-  "item.morematerials.platin_boots": "Platin Boots"
+  "item.morematerials.platin_ingot":  "Platin Ingot",
+  "item.morematerials.raw_platin":    "Raw Platin",
+	"item.morematerials.platin_nugget": "Platin Nugget",
+
+	"item.morematerials.platin_helmet":     "Platin Helmet",
+	"item.morematerials.platin_chestplate": "Platin Chestplate",
+	"item.morematerials.platin_leggings":   "Platin Leggings",
+	"item.morematerials.platin_boots":      "Platin Boots",
+
+	"item.morematerials.platin_sword":    "Platin Sword",
+	"item.morematerials.platin_pickaxe":  "Platin Pickaxe",
+	"item.morematerials.platin_shovel":   "Platin Shovel",
+	"item.morematerials.platin_axe":      "Platin Axe",
+	"item.morematerials.platin_hoe":      "Platin Hoe",
+
+	"item.morematerials.platin_apple":  "Platin Apple",
+	"item.morematerials.platin_steak":  "Platin Steak",
+
+  "block.morematerials.deepslate_platin_ore": "Deepslate Platin Ore",
+	"block.morematerials.platin_ore":       "Platin Ore",
+  "block.morematerials.platin_block":     "Block of Platin",
+	"block.morematerials.raw_platin_block": "Block of Raw Platin",
+
+	"itemGroup.morematerials": "More Materials"
 }

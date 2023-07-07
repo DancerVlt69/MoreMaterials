@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "morematerials:raw_platin"
+    }
+  },
+  "result": {
+    "item": "morematerials:raw_platin_block",
+    "count": 1
+  }
+}

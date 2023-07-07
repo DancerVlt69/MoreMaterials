@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "morematerials:item/platin"
+    "layer0": "morematerials:item/platin_ingot"
   }
 
 }
