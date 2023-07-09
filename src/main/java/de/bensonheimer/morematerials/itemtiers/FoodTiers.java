@@ -1,4 +1,4 @@
-package de.bensonheimer.morematerials.items;
+package de.bensonheimer.morematerials.itemtiers;
 
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;

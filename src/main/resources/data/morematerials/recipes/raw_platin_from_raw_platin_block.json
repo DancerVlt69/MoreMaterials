@@ -5,11 +5,11 @@
   ],
   "key": {
     "#": {
-      "item": "morematerials:platin_block"
+      "item": "morematerials:raw_platin_block"
     }
   },
   "result": {
-    "item": "morematerials:platin_ingot",
+    "item": "morematerials:raw_platin",
     "count": 9
   }
 }

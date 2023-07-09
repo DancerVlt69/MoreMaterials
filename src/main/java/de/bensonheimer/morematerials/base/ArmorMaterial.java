@@ -10,8 +10,8 @@ public class ArmorMaterial {
             new int[] { 11, 16, 15, 13 },
             20,
             SoundEvents.FOX_TELEPORT,
-            () -> Ingredient.of(ItemInit.PLATIN::get),
-            "example",
+            Ingredient.of(ItemInit.PLATIN_INGOT::get),
+            "platin_armor",
             0.25f,
             0.15f
     );

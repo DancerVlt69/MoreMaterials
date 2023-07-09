@@ -18,12 +18,14 @@ public class Morematerials {
     public Morematerials() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
-        ItemInit.register(modEventBus);
-        BlockInit.register(modEventBus);
+		BlockInit.register(modEventBus);
+
+		ItemInit.register(modEventBus);
+		ArmorInit.register(modEventBus);
         FoodInit.register(modEventBus);
-        ArmorInit.register(modEventBus);
         ToolInit.register(modEventBus);
-        ModTab.TABS.register(modEventBus);
+
+        ModTab.MOD_TABS.register(modEventBus);
 
         MinecraftForge.EVENT_BUS.register(this);
     }

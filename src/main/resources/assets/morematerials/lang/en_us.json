@@ -22,5 +22,5 @@
   "block.morematerials.platin_block":     "Block of Platin",
 	"block.morematerials.raw_platin_block": "Block of Raw Platin",
 
-	"itemGroup.morematerials": "More Materials"
+	"itemGroup.morematerials.tab1": "More Materials"
 }

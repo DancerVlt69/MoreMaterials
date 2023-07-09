@@ -1,9 +1,11 @@
-package de.bensonheimer.morematerials.items;
+package de.bensonheimer.morematerials.itemtiers;
 
 import de.bensonheimer.morematerials.core.init.ItemInit;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraftforge.common.ForgeTier;
+
+import java.util.function.Supplier;
 
 public class ToolTiers {
     public static final ForgeTier PLATIN_SWORD = new ForgeTier(
@@ -13,7 +15,7 @@ public class ToolTiers {
             3f,
             22,
             BlockTags.NEEDS_DIAMOND_TOOL,
-            () -> Ingredient.of(ItemInit.PLATIN.get()));
+			() -> Ingredient.of(ItemInit.PLATIN_INGOT.get()));
     public static final ForgeTier PLATIN_PICKAXE = new ForgeTier(
             3,
             2800,
@@ -21,7 +23,7 @@ public class ToolTiers {
             1.5f,
             22,
             BlockTags.NEEDS_DIAMOND_TOOL,
-            () -> Ingredient.of(ItemInit.PLATIN.get()));
+            () -> Ingredient.of(ItemInit.PLATIN_INGOT.get()));
     public static final ForgeTier PLATIN_SCHOVEL = new ForgeTier(
             3,
             2800,
@@ -29,7 +31,7 @@ public class ToolTiers {
             1.5f,
             22,
             BlockTags.NEEDS_DIAMOND_TOOL,
-            () -> Ingredient.of(ItemInit.PLATIN.get()));
+            () -> Ingredient.of(ItemInit.PLATIN_INGOT.get()));
     public static final ForgeTier PLATIN_AXE = new ForgeTier(
             1,
             2800,
@@ -37,7 +39,7 @@ public class ToolTiers {
             1.5f,
             22,
             BlockTags.NEEDS_DIAMOND_TOOL,
-            () -> Ingredient.of(ItemInit.PLATIN.get()));
+            () -> Ingredient.of(ItemInit.PLATIN_INGOT.get()));
     public static final ForgeTier PLATIN_HOE = new ForgeTier(
             1,
             2800,
@@ -45,5 +47,5 @@ public class ToolTiers {
             1.5f,
             22,
             BlockTags.NEEDS_DIAMOND_TOOL,
-            () -> Ingredient.of(ItemInit.PLATIN.get()));
+            () -> Ingredient.of(ItemInit.PLATIN_INGOT.get()));
 }
