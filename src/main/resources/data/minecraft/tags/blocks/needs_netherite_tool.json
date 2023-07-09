@@ -1,6 +1,7 @@
 {
   "values": [
+    "morematerials:platin_block",
     "morematerials:platin_ore",
-    "morematerials:platin_block"
+    "morematerials:deepslate_platin_ore"
   ]
 }

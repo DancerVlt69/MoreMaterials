@@ -23,7 +23,7 @@ public class ModPlacedFeatures {
         HolderGetter<ConfiguredFeature<?, ?>> configuredFeatures = context.lookup(Registries.CONFIGURED_FEATURE);
 
         register(context, DEEPSLATE_PLATIN_ORE_PLAYCED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.DEEPSLATE_PLATIN_ORE_KEY),
-                commonOrePlacement(12, HeightRangePlacement.triangle(VerticalAnchor.absolute(-64),
+                commonOrePlacement(4, HeightRangePlacement.triangle(VerticalAnchor.absolute(-64),
                         VerticalAnchor.absolute(320))));
     }
 
