@@ -1,11 +1,13 @@
 package de.bensonheimer.morematerials.core.init;
 
 import de.bensonheimer.morematerials.Morematerials;
+import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.DropExperienceBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -20,13 +22,13 @@ public class BlockInit {
 
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, Morematerials.MODID);
 
-    public static final RegistryObject<Block> DEEPSLATE_PLATIN_ORE = BLOCKS.register("deepslate_platin_ore",
+    public static final RegistryObject<Block> DEEPSLATE_PLATIN_ORE = registerBlock("deepslate_platin_ore",
             () -> new Block(BlockBehaviour.Properties
                     .copy(Blocks.STONE)
                     .strength(50.0F, 1200.0F)
                     .sound(SoundType.DEEPSLATE)));
 
-    public static final RegistryObject<Block> PLATIN_BLOCK = BLOCKS.register("platin_block",
+    public static final RegistryObject<Block> PLATIN_BLOCK = registerBlock("platin_block",
             () -> new Block(BlockBehaviour.Properties
                     .copy(Blocks.STONE)
                     .strength(100.0F, 2400.0F)
@@ -35,19 +37,19 @@ public class BlockInit {
                     );
 
 
-    public static final RegistryObject<Block> PLATIN_ORE = BLOCKS.register("platin_ore",
+    public static final RegistryObject<Block> PLATIN_ORE = registerBlock("platin_ore",
             () -> new Block(BlockBehaviour.Properties
                     .copy(Blocks.STONE)
                     .strength(25.0F, 600.0F)
                     .sound(SoundType.STONE)));
 
-    private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab ){
+    private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block){
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
-        registerBlockItem(name, toReturn, tab);
+        registerBlockItem(name, toReturn);
         return toReturn;
     }
 
-    private static <T extends Block> void registerBlockItem(String name, RegistryObject<T> block, CreativeModeTab tab) {
+    private static <T extends Block> void registerBlockItem(String name, RegistryObject<T> block) {
         ItemInit.ITEMS.register(name, () -> new BlockItem(block.get(),
                 new Item.Properties()));
 

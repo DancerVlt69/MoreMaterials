@@ -4,14 +4,14 @@ import de.bensonheimer.morematerials.Morematerials;
 import de.bensonheimer.morematerials.core.init.*;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
-import net.minecraft.world.item.*;
+import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.level.ItemLike;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.registries.DeferredRegister;
-import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
 import java.util.ArrayList;
@@ -24,13 +24,12 @@ public class ModTab {
 
     public static final List<Supplier<? extends ItemLike>> MOREMATERIALS_TAB_ITEMS = new ArrayList<>();
 
-    public static final RegistryObject<CreativeModeTab> MOREMATERIALS_TAB = TABS.register("example_tab",
+    public static final RegistryObject<CreativeModeTab> MOREMATERIALS_TAB = TABS.register("morematerials_tab",
             () -> CreativeModeTab.builder()
                     .title(Component.translatable("itemGroup.morematerials"))
                     .icon(ItemInit.PLATIN.get()::getDefaultInstance)
                     .displayItems((displayParams, output) ->
                             MOREMATERIALS_TAB_ITEMS.forEach(itemLike -> output.accept(itemLike.get())))
-                    .withSearchBar()
                     .build()
     );
 
@@ -45,6 +44,7 @@ public class ModTab {
             event.accept(ToolInit.PLATIN_SWORD);
             event.accept(ToolInit.PLATIN_PICKAXE);
             event.accept(ToolInit.PLATIN_SHOVEL);
+            event.accept(ToolInit.PLATIN_AXE);
             event.accept(ToolInit.PLATIN_HOE);
             event.accept(BlockInit.DEEPSLATE_PLATIN_ORE);
             event.accept(BlockInit.PLATIN_ORE);
@@ -58,7 +58,6 @@ public class ModTab {
             event.accept(ItemInit.PLATIN);
             event.accept(ItemInit.PLATIN_NUGGET);
             event.accept(ItemInit.RAW_PLATIN);
-
         }
     }
 }

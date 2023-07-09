@@ -8,6 +8,8 @@ import net.minecraft.world.item.crafting.Ingredient;
 
 import java.util.function.Supplier;
 
+import static de.bensonheimer.morematerials.Morematerials.MODID;
+
 public class ModArmorMaterial implements ArmorMaterial {
     private final int[] durabilityForType;
     private final int[] defenseForType;
@@ -58,7 +60,7 @@ public class ModArmorMaterial implements ArmorMaterial {
 
     @Override
     public String getName() {
-        return Morematerials.MODID + ":" + this.name;
+        return MODID + ":" + this.name;
     }
 
     @Override

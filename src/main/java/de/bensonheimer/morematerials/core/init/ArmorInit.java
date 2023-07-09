@@ -19,19 +19,19 @@ public class ArmorInit {
                     ArmorItem.Type.HELMET,
                     new Item.Properties()
             )));
-    public static final RegistryObject<ArmorItem> PLATIN_CHESTPLATE = (ITEMS.register("example_chestplate",
+    public static final RegistryObject<ArmorItem> PLATIN_CHESTPLATE = (ITEMS.register("platin_chestplate",
             () -> new ArmorItem(
                     ArmorMaterial.PLATIN_ARMOR,
                     ArmorItem.Type.CHESTPLATE,
                     new Item.Properties()
             )));
-    public static final RegistryObject<ArmorItem> PLATIN_LEGGINGS = (ITEMS.register("example_leggings",
+    public static final RegistryObject<ArmorItem> PLATIN_LEGGINGS = (ITEMS.register("platin_leggings",
             () -> new ArmorItem(
                     ArmorMaterial.PLATIN_ARMOR,
                     ArmorItem.Type.LEGGINGS,
                     new Item.Properties()
             )));
-    public static final RegistryObject<ArmorItem> PLATIN_BOOTS = (ITEMS.register("example_boots",
+    public static final RegistryObject<ArmorItem> PLATIN_BOOTS = (ITEMS.register("platin_boots",
             () -> new ArmorItem(
                     ArmorMaterial.PLATIN_ARMOR,
                     ArmorItem.Type.BOOTS,
