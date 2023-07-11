@@ -15,7 +15,6 @@ import net.minecraft.world.level.levelgen.feature.configurations.OreConfiguratio
 import net.minecraft.world.level.levelgen.placement.PlacedFeature;
 import net.minecraft.world.level.levelgen.structure.templatesystem.RuleTest;
 import net.minecraft.world.level.levelgen.structure.templatesystem.TagMatchTest;
-import net.minecraftforge.registries.RegistryObject;
 
 import java.util.List;
 import java.util.function.Supplier;
@@ -25,18 +24,24 @@ import static de.bensonheimer.morematerials.Morematerials.MODID;
 public class ModConfiguredFeatures {
 
     public static final ResourceKey<ConfiguredFeature<?, ?>> DEEPSLATE_PLATIN_ORE_KEY = registerKey("deepslate_platin_ore_key");
+	public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_PLATIN_ORE_KEY = registerKey("overworld_platin_ore_key");
 
     private static final RuleTest stoneRuleTest = new TagMatchTest(BlockTags.STONE_ORE_REPLACEABLES);
     private static final RuleTest deepslateRuleTest = new TagMatchTest(BlockTags.DEEPSLATE_ORE_REPLACEABLES);
 
-    public static final Supplier<List<OreConfiguration.TargetBlockState>> OVERWORLD_PLATIN_ORES = Suppliers.memoize(
+    public static final Supplier<List<OreConfiguration.TargetBlockState>> DEEPSLATE_PLATIN_ORES = Suppliers.memoize(
             () -> List.of(
-                    //OreConfiguration.target(stoneRuleTest, BlockInit.CITRINE_ORE.get().defaultBlockState()),
                     OreConfiguration.target(deepslateRuleTest, BlockInit.DEEPSLATE_PLATIN_ORE.get().defaultBlockState())));
+
+	public static final Supplier<List<OreConfiguration.TargetBlockState>> OVERWORLD_PLATIN_ORES = Suppliers.memoize(
+			() -> List.of(
+					OreConfiguration.target(stoneRuleTest, BlockInit.PLATIN_ORE.get().defaultBlockState())));
 
     public static void bootstrap(BootstapContext<ConfiguredFeature<?, ?>> context) {
         HolderGetter<PlacedFeature> placedFeatures = context.lookup(Registries.PLACED_FEATURE);
-        register(context, DEEPSLATE_PLATIN_ORE_KEY, Feature.ORE, new OreConfiguration(OVERWORLD_PLATIN_ORES.get(), 4));
+
+        register(context, DEEPSLATE_PLATIN_ORE_KEY, Feature.ORE, new OreConfiguration(DEEPSLATE_PLATIN_ORES.get(), 4));
+		register(context, OVERWORLD_PLATIN_ORE_KEY, Feature.ORE, new OreConfiguration(OVERWORLD_PLATIN_ORES.get(), 4));
     }
 
     public static ResourceKey<ConfiguredFeature<?, ?>> registerKey(String name) {

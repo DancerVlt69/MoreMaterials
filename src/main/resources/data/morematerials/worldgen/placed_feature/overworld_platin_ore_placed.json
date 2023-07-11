@@ -1,0 +1,27 @@
+{
+  "feature": "morematerials:overworld_platin_ore_placed",
+  "placement": [
+    {
+      "type": "minecraft:biome"
+    },
+    {
+      "type": "minecraft:count",
+      "count": 5
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:height_range",
+      "height": {
+        "type": "minecraft:trapezoid",
+        "min_inclusive": {
+          "absolute": -1
+        },
+        "max_inclusive": {
+          "absolute": 80
+        }
+      }
+    }
+  ]
+}
