@@ -1,6 +1,6 @@
 {
   "type": "forge:add_features",
   "biomes": "#minecraft:is_overworld",
-  "features": "morematerials:deepslate_platin_ore_placed",
+  "features": "morematerials:overworld_platin_ore_placed",
   "step": "underground_ores"
 }
